@@ -1,0 +1,16 @@
+C:\Users\02485122\source\repos\GlassFiller\GlassFillingRobot\GlassFillingRobot\bin\Debug\netcoreapp3.1\GlassFillingRobot.exe
+C:\Users\02485122\source\repos\GlassFiller\GlassFillingRobot\GlassFillingRobot\obj\Debug\netcoreapp3.1\GlassFillingRobot.csprojAssemblyReference.cache
+C:\Users\02485122\source\repos\GlassFiller\GlassFillingRobot\GlassFillingRobot\obj\Debug\netcoreapp3.1\GlassFillingRobot.AssemblyInfoInputs.cache
+C:\Users\02485122\source\repos\GlassFiller\GlassFillingRobot\GlassFillingRobot\obj\Debug\netcoreapp3.1\GlassFillingRobot.AssemblyInfo.cs
+C:\Users\02485122\source\repos\GlassFiller\GlassFillingRobot\GlassFillingRobot\bin\Debug\netcoreapp3.1\GlassFillingRobot.deps.json
+C:\Users\02485122\source\repos\GlassFiller\GlassFillingRobot\GlassFillingRobot\bin\Debug\netcoreapp3.1\GlassFillingRobot.runtimeconfig.json
+C:\Users\02485122\source\repos\GlassFiller\GlassFillingRobot\GlassFillingRobot\bin\Debug\netcoreapp3.1\GlassFillingRobot.runtimeconfig.dev.json
+C:\Users\02485122\source\repos\GlassFiller\GlassFillingRobot\GlassFillingRobot\bin\Debug\netcoreapp3.1\GlassFillingRobot.dll
+C:\Users\02485122\source\repos\GlassFiller\GlassFillingRobot\GlassFillingRobot\bin\Debug\netcoreapp3.1\GlassFillingRobot.pdb
+C:\Users\02485122\source\repos\GlassFiller\GlassFillingRobot\GlassFillingRobot\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\02485122\source\repos\GlassFiller\GlassFillingRobot\GlassFillingRobot\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\02485122\source\repos\GlassFiller\GlassFillingRobot\GlassFillingRobot\obj\Debug\netcoreapp3.1\GlassFillingRobot.csproj.CoreCompileInputs.cache
+C:\Users\02485122\source\repos\GlassFiller\GlassFillingRobot\GlassFillingRobot\obj\Debug\netcoreapp3.1\GlassFillingRobot.csproj.CopyComplete
+C:\Users\02485122\source\repos\GlassFiller\GlassFillingRobot\GlassFillingRobot\obj\Debug\netcoreapp3.1\GlassFillingRobot.dll
+C:\Users\02485122\source\repos\GlassFiller\GlassFillingRobot\GlassFillingRobot\obj\Debug\netcoreapp3.1\GlassFillingRobot.pdb
+C:\Users\02485122\source\repos\GlassFiller\GlassFillingRobot\GlassFillingRobot\obj\Debug\netcoreapp3.1\GlassFillingRobot.genruntimeconfig.cache
