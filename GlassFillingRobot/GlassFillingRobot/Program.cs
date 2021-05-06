@@ -2,6 +2,7 @@
 using System.Linq;
 using GlassFillingRobot.Domain;
 using GlassFillingRobot.Enums;
+using GlassFillingRobot.Helpers;
 using GlassFillingRobot.Service;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -22,28 +23,28 @@ namespace GlassFillingRobot
 
             //Create plateau by user input
             Console.WriteLine("Enter plateau size:");
-            var plateaLine = Console.ReadLine();
-            var plateauSize = Convert.ToInt32(plateaLine);
+            var plateauLine = Console.ReadLine();
+            var plateauSize = Convert.ToInt32(plateauLine);
             var plateau = plateauService.GetPlateau(plateauSize);
 
-            //Remove glasses at indicated coordinates
-            //Console.WriteLine("Enter coordinates of glasses to be removed");
-            //var lineGlass = Console.ReadLine();
-            //var lineArray = lineGlass.GetIntArrayByString();
-            //for (var i = 0; i < lineArray.Length; i++)
-            //{
-            //    if (i % 2 == 1)
-            //        continue;
-            //    if (i+1 >= lineArray.Length)
-            //        throw new ArgumentOutOfRangeException();
+			//Remove glasses at indicated coordinates
+			Console.WriteLine("Enter coordinates of glasses to be removed");
+			var lineGlass = Console.ReadLine();
+			var lineArray = lineGlass.GetIntArrayByString();
+			for (var i = 0; i < lineArray.Length; i++)
+			{
+				if (i % 2 == 1)
+					continue;
+				if (i + 1 >= lineArray.Length)
+					throw new ArgumentOutOfRangeException();
 
-            //    var coordinate = new Coordinate(lineArray[i], lineArray[i + 1]);
-            //    plateau.RemoveGlass(coordinate);
-            //}
+				var coordinate = new Coordinate(lineArray[i], lineArray[i + 1]);
+				plateau.RemoveGlass(coordinate);
+			}
 
-            //You can ask for robot's coordinates and orientation but for this instance the starting point is 0*0 and direction is North
-            //Console.WriteLine("Enter robot's coordinates and orientation:");
-            var robot = Robot(robotService, plateau);
+			//You can ask for robot's coordinates and orientation but for this instance the starting point is 0*0 and direction is North
+			//Console.WriteLine("Enter robot's coordinates and orientation:");
+			var robot = Robot(robotService, plateau);
 
             //continue to move the robot if there are any glasses unfilled
             //if robot is outside the plateau boundaries the program is finished

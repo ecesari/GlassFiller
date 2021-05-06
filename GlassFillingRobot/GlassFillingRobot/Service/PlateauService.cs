@@ -20,9 +20,9 @@ namespace GlassFillingRobot.Service
             {
                 Coordinate = new Coordinate(size,size)
             };
-            for (int i = 0; i < size; i++)
+            for (int i = 0; i <= size; i++)
             {
-                for (int j = 0; j < size; j++)
+                for (int j = 0; j <= size; j++)
                 {
                     var coordinate = new Coordinate(i,j);
                     var glass = new Glass(coordinate,GlassStateEnum.Empty);

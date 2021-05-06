@@ -84,7 +84,7 @@ namespace GlassFillingRobot.Domain
                     throw new ArgumentOutOfRangeException();
             }
 
-            if (Coordinate.X > Plateau.Coordinate.X || Coordinate.Y > Plateau.Coordinate.Y || Coordinate.X < 0 && Coordinate.Y < 0)
+            if (Coordinate.X > Plateau.Coordinate.X || Coordinate.Y > Plateau.Coordinate.Y || Coordinate.X < 0 || Coordinate.Y < 0)
             {
                 IsInsidePlateau = false;
             }

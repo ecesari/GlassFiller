@@ -14,7 +14,7 @@ namespace GlassFillingRobot.Domain
 
         public void RemoveGlass(Coordinate coordinate)
         {
-            var glass = Glasses.FirstOrDefault(x => x.Coordinate == coordinate);
+            var glass = Glasses.FirstOrDefault(g => g.Coordinate.X == coordinate.X && g.Coordinate.Y == coordinate.Y);
             if (glass == null)
                 throw new KeyNotFoundException("Glass is already removed!");
             Glasses.Remove(glass);
