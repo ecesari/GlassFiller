@@ -4,7 +4,7 @@
     {
         Empty,
         HalfFull,
-        Full
-
+        Full,
+		Removed
     }
 }

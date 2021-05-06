@@ -29,6 +29,8 @@ namespace GlassFillingRobot.Domain
                     break;
                 case GlassStateEnum.Full:
                     throw new ArgumentOutOfRangeException($"Glass is already full!");
+                case GlassStateEnum.Removed:
+	                break;
                 default:
                     throw new ArgumentOutOfRangeException();
             }

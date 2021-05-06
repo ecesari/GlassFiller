@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using GlassFillingRobot.Enums;
 
 namespace GlassFillingRobot.Domain
 {
@@ -16,8 +17,8 @@ namespace GlassFillingRobot.Domain
         {
             var glass = Glasses.FirstOrDefault(g => g.Coordinate.X == coordinate.X && g.Coordinate.Y == coordinate.Y);
             if (glass == null)
-                throw new KeyNotFoundException("Glass is already removed!");
-            Glasses.Remove(glass);
+                throw new KeyNotFoundException("There is no glass generated at this location!");
+            glass.GlassState = GlassStateEnum.Removed;
 
         }
     }

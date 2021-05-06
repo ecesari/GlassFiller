@@ -28,8 +28,8 @@ namespace GlassFillingRobot
             var plateau = plateauService.GetPlateau(plateauSize);
 
 			//Remove glasses at indicated coordinates
-			Console.WriteLine("Enter coordinates of glasses to be removed");
-			var lineGlass = Console.ReadLine();
+			Console.WriteLine("Enter coordinates of glasses to be removed, you must place a single space between each character");
+			Console.WriteLine("1 1 0 1 would remove the glasses at point 1,1 and 0,1"); var lineGlass = Console.ReadLine();
 			var lineArray = lineGlass.GetIntArrayByString();
 			for (var i = 0; i < lineArray.Length; i++)
 			{
@@ -53,8 +53,19 @@ namespace GlassFillingRobot
 
             var plateauFinished = plateau.Glasses.Count(x => x.GlassState != GlassStateEnum.Full) == 0;
 
-            Console.WriteLine(plateauFinished ? "Success! The robot has fil!ed all the glasses" : "The robot has failed to fill all the glasses");
-            Console.ReadLine();
+			if (plateauFinished)
+			{
+				Console.WriteLine("Success! The robot has fil!ed all the glasses");
+
+			}
+			else
+			{
+				Console.WriteLine("The robot has failed to fill all the glasses :(");
+				Console.WriteLine("Press enter to find the locations of the glasses to be removed");
+				Console.ReadLine();
+				robot.FindSoution();
+			}
+			Console.ReadLine();
         }
 
         private static Robot Robot(IRobotService robotService, Plateau plateau)
